@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/emailjs-com@3/dist/email.min.js" > </script>
+    <script type="text/javascript">
+      (function() {
+      emailjs.init("I17Xb97R-qvZ16mYK");
+      })(); 
+    </script>
+    <title>Jerina Francisca Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <!-- Font Awesome for Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" integrity="sha512-Fo3rlrZj/kTcO6LgZ6L2cHncE2KpjEuwfA+HJ4z8Fh4VQv5wH8fM7eRZl+fS7OYhlMRcPPxwLXrRmvfR7QpHbQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+    <!-- Header -->
+    <header>
+        <nav>
+            <div class="logo">Jerina's Portfolio</div>
+            <ul class="nav-links">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#skills">Skills</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+            <div class="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Home Section -->
+    <section id="home">
+        <div class="home-container">
+            <img src="your-picture.jpeg" alt="Jerina Francisca" class="profile-pic">
+            <h1>Hello, I'm <span>J. Jerina Francisca</span></h1>
+            <p>Final-year B.Tech IT student passionate about web development.</p>
+            <p>Experienced in creating responsive and dynamic web applications.</p>
+            <p>Seeking oppurtunity to apply my technical expertise in full time role</p>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about">
+        <h2>About Me</h2>
+        <h3>Internship Experiance</h3>
+        <p>Web Development Intern at AICL Training Institute.</p>
+        <div class="education">
+            <h3>Education</h3>
+            <div class="timeline">
+                <div class="timeline-item right">
+                    <div class="content">
+                        <h4>10th Standard</h4>
+                        <p>St. Johns Matric Higher Secondary School</p>
+                        <span>84%</span>
+                    </div>
+                </div>
+                <div class="timeline-item left">
+                    <div class="content">
+                        <h4>12th Standard</h4>
+                        <p>CEOA Matric Higher Secondary School</p>
+                        <span>89%</span>
+                    </div>
+                </div>
+                <div class="timeline-item right">
+                    <div class="content">
+                        <h4>B.Tech IT</h4>
+                        <p>PSNACET</p>
+                        <span>Currently Pursuing - 7.59 CGPA</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section id="skills">
+        <h2>Skills</h2>
+        <div class="skills-container">
+            <div class="skill">
+                <img src="java-logo.png" alt="Java">
+                <h3>Java</h3>
+                <p>Building dynamic backend systems with OOP concepts.</p>
+            </div>
+            <div class="skill">
+                <img src="html-logo.png" alt="HTML">
+                <h3>HTML</h3>
+                <p>Creating the structure of web pages.</p>
+            </div>
+            <div class="skill">
+                <img src="css-logo.png" alt="CSS">
+                <h3>CSS</h3>
+                <p>Styling and designing responsive websites.</p>
+            </div>
+            <div class="skill">
+                <img src="javascript-logo.png" alt="JavaScript">
+                <h3>JavaScript</h3>
+                <p>Developing interactive and functional web components.</p>
+            </div>
+            <div class="skill">
+                <img src="figma-logo.png" alt="Figma">
+                <h3>Figma</h3>
+                <p>Designing wireframes and UI/UX prototypes.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects">
+        <h2>Projects</h2>
+        <div class="projects-container">
+            <div class="project">
+                <img src="project1.png" alt="Personal Portfolio">
+                <h3>Personal Portfolio</h3>
+                <p>Responsive portfolio website using HTML, CSS, and JavaScript.</p>
+                
+            </div>
+            <div class="project">
+                <img src="project2.png" alt="Minesweeper Game">
+                <h3>Minesweeper Game</h3>
+                <p>Interactive game built with HTML, CSS, and JavaScript.</p>
+                
+            </div>
+            <div class="project">
+                <img src="project3.png" alt="Dictionary App">
+                <h3>Dictionary App</h3>
+                <p>Web-based dictionary app using HTML, CSS, and JavaScript.</p>
+                
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact">
+        <h2>Contact Me</h2>
+        <div class="contact-container">
+            <form action="mailto:jerinafrancisca@gmail.com" method="post" enctype="text/plain">
+                <input type="text" id="name" name="name" placeholder="Your Name" required>
+                <input type="email" id="email" name="email" placeholder="Your Email" required>
+                <input type="text" id="phone" name="phone" placeholder="Your Phone" required>
+                <textarea id="message" name="message" placeholder="Your Message" required></textarea>
+                <button onclick="sendmail()" type="button">Submit</button>
+            </form>
+            <div class="contact-info">
+                <p>Email: <a href="mailto:jerinafrancisca@gmail.com">jerinafrancisca@gmail.com</a></p>
+                <p>Phone: <a href="tel:+919345425985">93454 25985</a></p>
+                <div class="social-icons">
+                    <a href="#"><i class="fab fa-linkedin"></i></a>
+                    <a href="#"><i class="fab fa-github"></i></a>
+                    <!-- Add more social links as needed -->
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <p>© 2024 J. Jerina Francisca. All rights reserved.</p>
+    </footer>
+
+    <!-- JavaScript -->
+    <script src="script.js">
+                    
+function sendemail(){
+
+var from_name=document.getElementById("name").value;
+var email=document.getElementById("email").value;
+var from_name=document.getElementById("phone").value;
+var message=document.getElementById("message").value;
+
+var templateParams = {
+    email: email,
+    to_name : name,
+    message: message
+  };
+
+  emailjs.send('service_service_w9q9414', 'template_pui0ave', templateParams)
+.then(function(response) {
+ console.log('SUCCESS!', response.status, response.text);
+ window.alert("Sent successfully!");
+ 
+})
+
+ 
+}
+
+    </script>
+</body>
+</html>
+
